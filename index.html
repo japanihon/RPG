@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Random Password Generator </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="coppiedMessage">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Password Copied</p>
+        </div>
+        <div class="generatorBox">
+            <h1 class="title">Password Generator</h1>
+            <div id="passwordDisplay"><p>Password</p> <span id="copyToClipboardBtn"><i class="fa-solid fa-copy"></i></span></div>
+            <form id="generatorOptions">
+                <div class="options">
+                    <div class="characterRange">
+                        <p>Characters: <span class="characterSpan">16</span></p>
+                        <div class="form-group">
+                            <input type="range" id="characterRange" value="16" min="4">
+                        </div>
+                    </div>
+                    <p>Options</p>
+                    <div class="includeUppercase">
+                        <div class="form-group">
+                            <p>Include Uppercase</p>
+                            <input type="checkbox" id="includeUppercase">
+                            <label class="checkbox" for="includeUppercase">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="includeNumbers">
+                        <div class="form-group">
+                            <p>Include Numbers</p>
+                            <input type="checkbox" id="includeNumbers">
+                            <label class="checkbox" for="includeNumbers">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="includeSymbols">
+                        <div class="form-group">
+                            <p>Include Symbols</p>
+                            <input type="checkbox" id="includeSymbols">
+                            <label class="checkbox" for="includeSymbols">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit"> Generate New Password </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
